@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    body{
+        background-color: #f3ffc68c;
+    }
+}
+
+span{
+    color: rgb(238, 143, 157);
+}
+
+.navbar{
+    background-color: #1c5253;
+    padding: 16px 128px;
+}
+.navbar .navbar-brand{
+    font-size: 22.4px;
+    font-weight: 700;
+}
+
+#navbarSupportedContent > ul > li:nth-child(n) > a{
+    color: #fff;
+    font-size: 18px;
+    padding: 0 13px;
+}
+#navbarSupportedContent > ul > li:nth-child(n) > a:hover{
+    color: goldenrod;
+}
+#navbarSupportedContent > button{
+    background-color: #e9f8b4;
+    font-weight: 600;
+    padding: 7px 23px;
+    border-radius: 30px;
+}
+.pic-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+
+    img{
+        height: 400px;
+        width: 500px;
+        object-fit: scale-down;
+        border-radius: 0px;
+    }
+
+}
+
+.main{
+    .col{
+        display: flex;
+        justify-content: flex-start;
+        .col-1{
+            margin-left: 36px;
+            margin-top: 20px;
+            a{
+                color:hotpink;
+                text-decoration: none;
+            }
+        }
+    }
+    .row{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        gap: 30px;
+
+        img{
+            height: 262px;
+            object-fit: cover;
+            margin-top: 12px;
+        }
+    }
+    h1{
+        color: #1c5253;
+        text-align: center;
+        margin: 25px;
+        font-weight: 700;
+        text-shadow:5px 5px 10px #306b34;
+    }
+    .row-bottom{
+        margin-top: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+footer{
+    text-align: center;
+    background-color: #1c5253;
+    color: white;
+    font-size: 14px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    span{
+        font-weight: 700;
+        margin-top: 18px;
+        color: lightpink;
+    }
+}
+
+@media (max-width:768px){
+    .col{
+        align-items: center;
+    }
+    .col-1{
+            display:none;
+            width: 0%;
+    }
+    .col-11{
+            display: flex;
+            flex-direction: column;
+            .card{
+                margin: 0 40px;
+            }
+    }
+}
+
+@media (max-width:1024px){
+    .col-1{
+        display: none;
+    }
+    .col-11{
+        margin-left: 40px;
+    }
+}
+
+@media (max-width:1400px){
+    .col-1{
+        display: none;
+    }
+    .col-11{
+        margin-left: 70px;
+    }
+}
